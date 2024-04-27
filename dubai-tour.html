@@ -78,21 +78,21 @@
               </div>
             </div>
             <div class="video-tour-section">
-              <div class="tourimg">
-                <div class="d-flex justify-content-end">
-                  <div
-                    class="media-button text-center position-absolute bg-dark p-2 rounded-3 mx-3 px-3 mt-3 m-2"
+              <div class="tourimg position-relative">
+                <!-- <div class="d-flex justify-content-end"> -->
+                <div
+                  class="media-button text-center position-absolute end-0 bg-dark p-2 rounded-3 mx-3 px-3 mt-3 m-2"
+                >
+                  <a
+                    class="tft-btn camera launch-tour-gallery"
+                    href="#"
+                    data-tft-open-all-media="photos"
+                    aria-label="Icon Camera"
                   >
-                    <a
-                      class="tft-btn camera launch-tour-gallery"
-                      href="#"
-                      data-tft-open-all-media="photos"
-                      aria-label="Icon Camera"
-                    >
-                      <i class="bi bi-camera-fill text-white"></i>
-                    </a>
-                  </div>
+                    <i class="bi bi-camera-fill text-white"></i>
+                  </a>
                 </div>
+                <!-- </div> -->
                 <img src="assets/images/large.jpg" alt="" />
               </div>
             </div>
@@ -119,11 +119,11 @@
                   <span>9 Hours</span>
                 </div>
                 <div class="">
-                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  <i class="fa fa-ticket"></i>
                   <span>Mobile & printed vouchers accepted</span>
                 </div>
                 <div class="">
-                  <i class="fa fa-check" aria-hidden="true"></i>
+                  <i class="fa fa-check icon-green" aria-hidden="true"></i>
                   <span>Cancellation</span>
                 </div>
               </div>
@@ -302,8 +302,77 @@
                   type="date"
                   name="date"
                 />
+
+                <div class="w-100 mt-4">
+                  <div class="input-group input-group-lg mb-2">
+                    <span class="input-group-text gap-2 flex-grow-1"
+                      ><i class="fa fa-user"></i> Adult</span
+                    >
+                    <span class="input-group-text" id="decreaseBtn"
+                      ><strong>-</strong></span
+                    >
+                    <input
+                      type="text"
+                      class="form-control text-center"
+                      name="numberOfPassengers"
+                      id="numberOfPassengers"
+                      value="1"
+                    />
+                    <span class="input-group-text" id="increaseBtn"
+                      ><strong>+</strong></span
+                    >
+                  </div>
+                </div>
+
+                <div class="w-100 mb-4">
+                  <div class="input-group input-group-lg mb-3">
+                    <span class="input-group-text gap-2 flex-grow-1"
+                      ><i class="fa fa-briefcase"></i>Child</span
+                    >
+                    <span class="input-group-text" id="lugdecreaseBtn"
+                      ><strong>-</strong></span
+                    >
+                    <input
+                      type="text"
+                      class="form-control text-center"
+                      name="luggageCount"
+                      id="luggageCount"
+                      value="0"
+                    />
+                    <span class="input-group-text" id="lugincreaseBtn"
+                      ><strong>+</strong></span
+                    >
+                  </div>
+                </div>
+                <button class="btn btn-lg btn-warning w-100" type="button">
+                  Check Availability
+                </button>
               </div>
-              div.bg-gray-dark
+              <div class="bg-gray-dark p-3">
+                <p class="text-light fw-bold">Time: 09:00 - 18:00</p>
+                <select
+                  class="form-select form-select-lg"
+                  name="language"
+                  id=""
+                >
+                  <option value="">Selection</option>
+                  <option value="eng">English language</option>
+                  <option value="Urdu">Urdu language</option>
+                </select>
+              </div>
+              <div class="bg-gray-dark p-3 bt-white">
+                <span class="text-light lh-1">
+                  Please let us know where you would like to request a pickup
+                  from - or if you are making your own way - in the box below.
+                </span>
+                <input
+                  class="form-control form-control-lg mt-3"
+                  type="text"
+                  name="hotel"
+                  id=""
+                  placeholder="E.g Hotel name and address"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -847,5 +916,38 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <!-- slider script -->
     <script src="assets/js/custom.js"></script>
+    <!-- input -->
+
+    <script>
+      $(document).ready(function () {
+        // Function to increase input value for pessenger
+        $("#increaseBtn").click(function () {
+          var currentValue = parseInt($("#numberOfPassengers").val());
+          $("#numberOfPassengers").val(currentValue + 1);
+        });
+
+        // Function to decrease input value for pessenger
+        $("#decreaseBtn").click(function () {
+          var currentValue = parseInt($("#numberOfPassengers").val());
+          if (currentValue > 0) {
+            $("#numberOfPassengers").val(currentValue - 1);
+          }
+        });
+
+        // Function to increase input value for Luggage
+        $("#lugincreaseBtn").click(function () {
+          var currentValue = parseInt($("#luggageCount").val());
+          $("#luggageCount").val(currentValue + 1);
+        });
+
+        // Function to decrease input value for Luggage
+        $("#lugdecreaseBtn").click(function () {
+          var currentValue = parseInt($("#luggageCount").val());
+          if (currentValue > 0) {
+            $("#luggageCount").val(currentValue - 1);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
