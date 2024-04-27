@@ -54,6 +54,9 @@ h6 {
 .booking-box button {
   background-color: #013976;
 }
+.booking-box button:hover {
+  background-color: #013976;
+}
 
 .bg-gray {
   background-color: #d8d8d8;
