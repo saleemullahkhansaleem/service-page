@@ -616,6 +616,27 @@
   </div>
 
 
+  <!-- new code is here -->
+  <div class="col-md-6 mb-3">
+    <label for="numberOfPassengers " class="bokinglabel mb-2">Number of Passengers</label>
+    <div class="input-group mb-3 ">
+      <span class="input-group-text rounded-0"><i class="fa fa-user"></i></span>
+      <span class="input-group-text" id="decreaseBtn"><strong>-</strong></span>
+      <input type="text" class="form-control text-center" name="numberOfPassengers" id="numberOfPassengers" value="1">
+      <span class="input-group-text rounded-0" id="increaseBtn"><strong>+</strong></span>
+    </div>
+  </div>
+  <div class="col-md-6 mb-3">
+    <label for="luggageCount " class="bokinglabel mb-2">Luggage Count</label>
+    <div class="input-group mb-3 ">
+      <span class="input-group-text rounded-0"><i class="fa fa-briefcase"></i></span>
+      <span class="input-group-text" id="lugdecreaseBtn"><strong>-</strong></span>
+      <input type="text" class="form-control text-center" name="luggageCount" id="luggageCount" value="0">
+      <span class="input-group-text rounded-0" id="lugincreaseBtn"><strong>+</strong></span>
+    </div>
+  </div>
+
+
 
 
 
@@ -632,6 +653,37 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <!-- slider script -->
   <script src="assets/js/custom.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Function to increase input value for pessenger
+      $("#increaseBtn").click(function(){
+        var currentValue = parseInt($("#numberOfPassengers").val());
+        $("#numberOfPassengers").val(currentValue + 1);
+      });
+      
+      // Function to decrease input value for pessenger
+      $("#decreaseBtn").click(function(){
+        var currentValue = parseInt($("#numberOfPassengers").val());
+        if(currentValue > 0) {
+          $("#numberOfPassengers").val(currentValue - 1);
+        }
+      });
+
+      // Function to increase input value for Luggage
+      $("#lugincreaseBtn").click(function(){
+        var currentValue = parseInt($("#luggageCount").val());
+        $("#luggageCount").val(currentValue + 1);
+      });
+
+      // Function to decrease input value for Luggage
+      $("#lugdecreaseBtn").click(function(){
+        var currentValue = parseInt($("#luggageCount").val());
+        if(currentValue > 0) {
+          $("#luggageCount").val(currentValue - 1);
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
