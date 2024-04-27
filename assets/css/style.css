@@ -1,0 +1,240 @@
+.body {
+  font-family: "poppins", sans-serif;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "poppins", sans-serif;
+  line-height: normal;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: "poppins", sans-serif;
+}
+
+/* New css Please used this one */
+
+.dubiaadv-section {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  background-color: #fbfbfb;
+}
+
+.product-box {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+  -webkit-box-shadow: 0 0 0 0 #fff, 0 4px 3px 0 rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0 0 0 0 #fff, 0 4px 3px 0 rgba(0, 0, 0, 0.11);
+  box-shadow: 0 0 0 0 #fff, 0 4px 3px 0 rgba(0, 0, 0, 0.11);
+  height: 100%;
+}
+.product-box img.lazy {
+  height: auto;
+  width: 100%;
+}
+.product-innerbox {
+  background: #fff !important;
+  margin: 15px 15px 0 15px;
+}
+.product-box h3 {
+  font-size: 16px;
+  margin: -2px 0 6px 0;
+  color: #3c3c3b;
+  font-weight: 600;
+}
+.feefo-rating {
+  height: 24px;
+  margin-bottom: 9px;
+  color: #f9b31e;
+}
+.product-box .feefo-rating i {
+  width: auto;
+  height: 22px;
+  color: #f9b31e;
+}
+.product-box .feefo-rating span {
+  color: #f9b31e;
+  font-size: 12px;
+}
+.duration span {
+  color: #3c3c3b;
+  font-size: 14px;
+  font-weight: 700;
+}
+.duration i {
+  margin-right: 6px;
+}
+.ez-cancel {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  height: 24px;
+  margin: 6px 0 0 0;
+  position: relative;
+  color: #3c3c3b;
+}
+
+.product-box .product-innerbox .ez-cancel i {
+  margin-right: 0px;
+}
+
+.ez-cancel i {
+  color: #8dda5d;
+  margin-right: 2px;
+}
+.ez-cancel .freeCancellationMsg {
+  background: #71b767;
+  color: #fff;
+  cursor: pointer;
+  left: 0;
+  max-width: 380px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 9px;
+  position: absolute;
+  top: -65px;
+  transition: all 0.3s ease-in-out;
+  z-index: 99;
+}
+.cs-home-tour-badges {
+  display: block;
+}
+.cs-home-tour-badges .badgeContainer {
+  margin-top: 0;
+}
+.cs-home-tour-badges .badgeContainer {
+  width: auto;
+  display: inline-block;
+}
+.badgeContainer {
+  height: 28px;
+  margin: 12px 0 0 0;
+  position: relative;
+  width: 65%;
+}
+.cs-home-tour-badges .badgeContainer .badgeDefault {
+  position: relative;
+}
+.cs-badge.bs,
+.cs-badge.BS {
+  background-color: #06618e;
+}
+.cs-badge.bs,
+.cs-badge.BS {
+  background-color: #06618e;
+}
+.badgeContainer .badgeDefault {
+  bottom: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  height: 22px;
+  left: 0;
+  letter-spacing: 1px;
+  line-height: 22px;
+  margin-top: 7px;
+  padding: 0 16px 0 20px;
+  position: absolute;
+  top: 0;
+  -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 8% 50%, 0 0);
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 8% 50%, 0 0);
+}
+.cs-badge {
+  white-space: nowrap;
+}
+.price {
+  text-align: end;
+  margin: 10px 0;
+}
+.price h3 {
+  font-size: 16px;
+  font-weight: 400;
+  min-height: inherit;
+  margin: 7px 7px 0 0;
+  display: inline-block;
+}
+.price h3 span {
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 6px 6px 0 0;
+  color: #3c3c3b;
+}
+
+/* New css */
+.title-box {
+  margin: 12px auto 0;
+  padding: 12px;
+}
+#breadcrumbs {
+  font-size: 12px;
+  margin-bottom: 3px;
+  margin-top: 10px;
+}
+a {
+  text-decoration: none;
+  color: #013976;
+}
+.breadcrumb_last {
+  font-weight: 700;
+}
+.title-box h1 {
+  color: #3c3c3b;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.video-tour-section {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 0 auto 24px;
+}
+.tourimg img{
+  width: 100%;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .dubiaadv-section {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .dubiaadv-section {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .dubiaadv-section {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1380px) {
+}
